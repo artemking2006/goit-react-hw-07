@@ -1,0 +1,23 @@
+.form {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    max-width: 300px;
+    @media (width<620px) {
+        max-width: 100%;
+    }
+}
+.form:has(.input:focus),
+.input:focus {
+    border-color: rgb(43, 39, 39);
+}
+
+.input {
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 2px solid gray;
+    outline: unset;
+}

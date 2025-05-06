@@ -1,0 +1,21 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    grid-auto-rows: auto;
+    gap: 1rem;
+    max-width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    list-style: none;
+    padding: 10px;
+}
+
+.item {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 2px solid gray;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+}
